@@ -9,14 +9,6 @@ const Home: NextPage = () => {
     <div className=" flex-col flex-1 text-white h-screen p-10">
       <Head>
         <title>Challan-X</title>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap"
-          rel="stylesheet"
-        ></link>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
-          rel="stylesheet"
-        ></link>
       </Head>
       <main className="flex-col">
         <div className=" flex-col text-center mt-10">
@@ -24,7 +16,10 @@ const Home: NextPage = () => {
           <p className="text-red-700"> **Sign In Before Issue Complain** </p>
         </div>
 
-        
+        <form>
+          
+        </form>
+
       </main>
     </div>
   );

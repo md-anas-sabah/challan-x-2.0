@@ -1,6 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+/* @layer components {
+    .form-label {
+      @apply flex-col
+    }
+  } */
+
+.form-label {
+  display: flex;
+  flex-direction: column;
+}
+.form-label > input {
+  height: 3rem;
+  padding: 10px;
+  color: black;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+

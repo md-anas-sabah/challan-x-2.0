@@ -16,11 +16,11 @@ function Header() {
   return (
     <div className="text-gray-500 p-5 border-r hidden md:inline border-gray-900 overflow-y-scroll h-screen scrollbar-hide w-64 ">
       <div className=" flex-shrink-0">
-        <h1 className="text-white text-5xl font-thin font-roboto ml-5 cursor-pointer">
+        <h1 className="text-white text-5xl font-thin font-Roboto ml-5 cursor-pointer">
           Challan-X
         </h1>
         <p className="ml-16">Powered By</p>
-        <h2 className="text-white text-2xl font-thin font-bebas ml-5">
+        <h2 className="text-white text-2xl font-thin font-Bebas ml-5">
           Chandigarh <span className="text-red-600">University</span>
         </h2>
       </div>
@@ -68,10 +68,12 @@ function Header() {
           <DocumentIcon className="h-5 w-5 " />
           <p>Guidelines</p>
         </div>
-        <div className="text-white flex space-x-3 items-center mb-4 hover:bg-gray-400 hover:text-black cursor-pointer h-10 p-2 rounded-xl">
-          <ChatBubbleLeftRightIcon className="h-5 w-5 " />
-          <p>Contact Us</p>
-        </div>
+        <Link href="/contact">
+          <div className="text-white flex space-x-3 items-center mb-4 hover:bg-gray-400 hover:text-black cursor-pointer h-10 p-2 rounded-xl">
+            <ChatBubbleLeftRightIcon className="h-5 w-5 " />
+            <p>Contact Us</p>
+          </div>
+        </Link>
       </div>
     </div>
   );
