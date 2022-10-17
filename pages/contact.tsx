@@ -32,7 +32,9 @@ function contact() {
         ></textarea>
       </div>
 
-      <button className="border h-14 w-52 text-lg rounded-sm hover:bg-gray-200 hover:text-black">Submit</button>
+      <button className="border h-14 w-52 text-lg rounded-sm hover:bg-gray-200 hover:text-black">
+        Submit
+      </button>
     </form>
   );
 }

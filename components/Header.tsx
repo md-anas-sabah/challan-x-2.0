@@ -7,6 +7,7 @@ import {
   RocketLaunchIcon,
   DocumentIcon,
   ChatBubbleLeftRightIcon,
+  HandThumbUpIcon,
 } from "@heroicons/react/24/solid";
 import { useSession, signIn, signOut } from "next-auth/react";
 import Link from "next/link";
@@ -57,10 +58,6 @@ function Header() {
         </Link>
 
         <div className="text-white flex space-x-3 items-center mb-4 hover:bg-gray-400 hover:text-black cursor-pointer h-10 p-2 rounded-xl">
-          <UserGroupIcon className="h-5 w-5 " />
-          <p>About Us</p>
-        </div>
-        <div className="text-white flex space-x-3 items-center mb-4 hover:bg-gray-400 hover:text-black cursor-pointer h-10 p-2 rounded-xl">
           <RocketLaunchIcon className="h-5 w-5 " />
           <p>Services</p>
         </div>
@@ -68,6 +65,18 @@ function Header() {
           <DocumentIcon className="h-5 w-5 " />
           <p>Guidelines</p>
         </div>
+        <Link href="/about">
+          <div className="text-white flex space-x-3 items-center mb-4 hover:bg-gray-400 hover:text-black cursor-pointer h-10 p-2 rounded-xl">
+            <HandThumbUpIcon className="h-5 w-5 " />
+            <p>Vision And Mission</p>
+          </div>
+        </Link>
+        <Link href="/">
+          <div className="text-white flex space-x-3 items-center mb-4 hover:bg-gray-400 hover:text-black cursor-pointer h-10 p-2 rounded-xl">
+            <UserGroupIcon className="h-5 w-5 " />
+            <p>About Us</p>
+          </div>
+        </Link>
         <Link href="/contact">
           <div className="text-white flex space-x-3 items-center mb-4 hover:bg-gray-400 hover:text-black cursor-pointer h-10 p-2 rounded-xl">
             <ChatBubbleLeftRightIcon className="h-5 w-5 " />

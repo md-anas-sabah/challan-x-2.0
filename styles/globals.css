@@ -24,3 +24,64 @@
   border-radius: 5px;
 }
 
+.about {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 10px;
+  left: 390px;
+  right: 90px;
+  align-items: center;
+
+  gap: 40px;
+  height: 50vh;
+  padding: 20px;
+}
+.about_p {
+  max-width: 60%;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.about_h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-size: 50px;
+  background: linear-gradient(10deg, #fdcd3b 40%, #000000 60%);
+  height: 50vh;
+  color: white;
+  text-align: center;
+}
+.mission {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  top: 300px;
+  left: 390px;
+  right: 90px;
+  align-items: center;
+  gap: 40px;
+  height: 50vh;
+  padding: 20px;
+}
+.mission_p {
+  max-width: 60%;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+.mission_h1 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  font-size: 50px;
+  background: linear-gradient(173deg, #000000 40%, #e8ef1a 60%);
+  height: 50vh;
+  color: white;
+  text-align: center;
+}
