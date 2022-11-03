@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 
 function contact() {
+  const [email, setEmail] = useState("");
+
   return (
     <form className="text-white p-10 flex-col space-y-6 ml-20">
       <div className="space-y-2">
@@ -13,7 +15,12 @@ function contact() {
       </div>
       <div className="form-label space-y-2">
         <label>Your Email</label>
-        <input type="text" placeholder="name@example.com" />
+        <input
+          type="text"
+          placeholder="name@example.com"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
       </div>
 
       <div className="form-label space-y-2">

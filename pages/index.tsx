@@ -16,10 +16,9 @@ const Home: NextPage = () => {
           <p className="text-red-700"> **Sign In Before Issue Complain** </p>
         </div>
 
-        <form>
-          
-        </form>
-
+        {/* <div className="mt-10 p-10 border border-emerald-50 text-4xl w-60 flex">
+          <button>Click here to report!</button>
+        </div> */}
       </main>
     </div>
   );
