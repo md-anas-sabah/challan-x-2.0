@@ -25,7 +25,7 @@ function Header() {
           Chandigarh <span className="text-red-600">University</span>
         </h2>
       </div>
-      {session ? (
+      {/* {session ? (
         <div
           className="flex text-white items-center justify-center  border rounded-lg h-12  mt-10 cursor-pointer"
           onClick={() => signOut()}
@@ -41,7 +41,13 @@ function Header() {
           <ArrowRightOnRectangleIcon className="h-5 w-5" />
           <p>Sign-In</p>
         </div>
-      )}
+      )} */}
+      <Link href="/authentication">
+        <div className="flex text-white items-center justify-center  border rounded-lg h-12  mt-10 cursor-pointer">
+          <ArrowRightOnRectangleIcon className="h-5 w-5" />
+          <p className="ml-2">Sign-In</p>
+        </div>
+      </Link>
 
       <div className="flex-col mt-10 text-lg">
         <Link href="/">

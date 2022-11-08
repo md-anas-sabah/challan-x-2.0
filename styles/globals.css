@@ -146,3 +146,126 @@
   background: center;
   background-color: rgba(0, 0, 0, 0.7);
 }
+
+/* Sign In*/
+
+/* .sign-in {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  font-family: "";
+  border-bottom: 1px solid white;
+  
+}
+
+.sign-in > h2 {
+  font-size: 25px;
+  font-weight: 200;
+  color: white;
+}
+.sign-in > p {
+  color: rgb(169, 132, 132);
+  margin-top: -13px;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form > label {
+  font-size: 20px;
+  color: white;
+  font-weight: 100;
+  padding: 5px 0 5px 0;
+  margin-top: 10px;
+  font-weight: 100;
+}
+form > input {
+  height: 1rem;
+  padding: 10px;
+  font-size: 15px;
+  border-top: none;
+  font-weight: 100;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: rgb(70, 68, 68);
+  color: white;
+  width: 23rem;
+}
+.form-button {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+.signIn-button {
+  height: 3.5rem;
+  width: 11rem;
+  font-size: 13px;
+  background-color: black;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.google-button {
+  height: 3.5rem;
+  width: 13rem;
+  font-size: 13px;
+  background-color: rgb(66, 133, 244);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .sign-in > h2 {
+    font-size: 21px;
+  }
+} */
+
+.sign-in-label {
+  font-weight: 100;
+}
+.sign-in-input {
+  height: 3rem;
+  padding: 10px;
+  font-size: 15px;
+  border-top: none;
+  font-weight: 100;
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  /* background-color: rgb(70, 68, 68);
+   */
+  background-color: black;
+  color: white;
+  width: 23rem;
+  border-bottom: 1px solid white;
+}
+.signIn-button {
+  height: 3.5rem;
+  width: 11rem;
+  font-size: 13px;
+  background-color: white;
+  color: black;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
+.google-button {
+  height: 3.5rem;
+  width: 13rem;
+  font-size: 13px;
+  background-color: rgb(66, 133, 244);
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+}
