@@ -116,9 +116,10 @@
 }
 
 .modal {
-  background: #fff;
+  /* background: #fff; */
+  background-color: #392e2e;
   width: 500px;
-  height: 600px;
+  height: 700px;
   border-radius: 15px;
   padding: 20px;
   z-index: 100;

@@ -19,7 +19,7 @@ function Modal({ show, onClose, children }) {
       <div className="modal">
         <div className="header">
           <a href="#" onClick={handleClose}>
-            <XMarkIcon className="h-10 w-10" />
+            <XMarkIcon className="h-10 w-10 text-white" />
           </a>
         </div>
         <div className="body">{children}</div>
