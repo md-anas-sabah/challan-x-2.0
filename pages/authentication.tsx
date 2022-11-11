@@ -4,8 +4,9 @@ import SignIn from "../components/SignIn";
 
 function authentication() {
   return (
-    <div className=" flex text-white m-9">
+    <div className=" flex flex-col text-white ml-96 ">
       <Login />
+      <hr className="h-10 " />
       <SignIn />
     </div>
   );

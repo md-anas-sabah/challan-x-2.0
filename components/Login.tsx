@@ -28,12 +28,17 @@ function Login() {
   //       console.log(err);
   //     }
   //   };
+  console.log(email);
+  console.log(password);
+  const submit = (e: any) => {
+    e.preventDefault();
+  };
 
   return (
-    <div className="sign-in flex flex-col p-20 font-roboto ">
+    <div className="sign-in flex flex-col p-20 font-roboto">
       <h2 className="text-5xl">I already have an account</h2>
       <p className="text-gray-500 mt-3">Sign In with your email and password</p>
-      <form className="flex flex-col">
+      <form className="flex flex-col" onSubmit={submit}>
         <label className="text-2xl mt-10 mb-3 sign-in-label">Email</label>
         <input
           type="email"
