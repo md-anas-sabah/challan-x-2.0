@@ -46,7 +46,7 @@ function enroll() {
         />
         <label className="text-2xl mt-6 sign-in-label">First Name</label>
         <input
-          type="password"
+          type="text"
           className="sign-in-input"
           required
           autoComplete="on"
@@ -55,7 +55,7 @@ function enroll() {
         />
         <label className="text-2xl mt-6 sign-in-label">Last Name</label>
         <input
-          type="password"
+          type="text"
           className="sign-in-input"
           required
           autoComplete="on"
@@ -64,7 +64,7 @@ function enroll() {
         />
         <label className="text-2xl mt-6 sign-in-label">Employee Id</label>
         <input
-          type="password"
+          type="text"
           className="sign-in-input"
           required
           autoComplete="on"
