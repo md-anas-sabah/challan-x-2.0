@@ -27,10 +27,10 @@ function Form() {
         className="mt-4"
         type="file"
         id="img"
-        name="img"
+        name="img1"
         accept="image/*"
       />
-      <input type="file" id="img" name="img" accept="image/*" />
+      <input type="file" id="img" name="img2" accept="image/*" />
       <input type="file" id="img" name="img" accept="image/*" />
       <label className="text-2xl mt-6 sign-in-label">Description</label>
       <textarea

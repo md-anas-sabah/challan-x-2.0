@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 function enroll() {
   const [email, setEmail] = useState("");
@@ -8,6 +9,26 @@ function enroll() {
   const [employee, setEmployee] = useState("");
   const submit = (e: any) => {
     e.preventDefault();
+    const data = {
+      firstName: firstName,
+      lastName: lastName,
+      password: password,
+      empID: employee,
+      email: email,
+    };
+    axios({
+      method: "post",
+      url: "http://localhost:5000/add-user",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      data: data,
+    })
+      .then(function (response) {
+        console.log(response);
+        //redirect the user to home page
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
   };
   return (
     <div className="sign-in flex flex-col p-20 font-roboto  text-white ml-96">
