@@ -1,5 +1,8 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 import axios from "axios";
+=======
+>>>>>>> 1848ebb04cb8e67f987109c5374faba2c692a12e
 
 function enroll() {
   const [email, setEmail] = useState("");
@@ -9,6 +12,7 @@ function enroll() {
   const [employee, setEmployee] = useState("");
   const submit = (e: any) => {
     e.preventDefault();
+<<<<<<< HEAD
     const data = {
       firstName: firstName,
       lastName: lastName,
@@ -29,6 +33,8 @@ function enroll() {
       .catch(function (error) {
         console.log(error);
       });
+=======
+>>>>>>> 1848ebb04cb8e67f987109c5374faba2c692a12e
   };
   return (
     <div className="sign-in flex flex-col p-20 font-roboto  text-white ml-96">

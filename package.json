@@ -7,7 +7,10 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.0.12",
+<<<<<<< HEAD
     "axios": "^1.1.3",
+=======
+>>>>>>> 1848ebb04cb8e67f987109c5374faba2c692a12e
     "next": "latest",
     "next-auth": "^4.13.0",
     "react": "18.1.0",
