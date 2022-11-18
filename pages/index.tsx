@@ -1,6 +1,7 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import { useState } from "react";
+import axios from "axios";
+import { useState, useEffect } from "react";
 // import Header from "../components/Header";
 // import { useSession } from "next-auth/react";
 import Form from "../components/Form";
@@ -8,6 +9,7 @@ import Modal from "../components/Modal";
 
 const Home: NextPage = () => {
   const [showModal, setShowModal] = useState(false);
+  const [data, setData] = useState("");
 
   return (
     <div className=" flex-col flex-1 text-white h-screen p-10 center">
@@ -20,7 +22,6 @@ const Home: NextPage = () => {
           <h1 className="font-bebas text-7xl">Welcome To Challan-X</h1>
           <p className="text-red-700"> **Sign In Before Issue Complain** </p>
         </div>
-
         <div className="button">
           <button onClick={() => setShowModal(true)} className="btn">
             Click here to report!
@@ -35,3 +36,24 @@ const Home: NextPage = () => {
 };
 
 export default Home;
+
+// useEffect(() => {
+//   axios
+//     .get("http://localhost:5000/find", {
+//       maxContentLength: Infinity,
+//       maxBodyLength: Infinity,
+//     })
+//     .then((res) => {
+//       const dt = btoa(
+//         String.fromCharCode(...new Uint8Array(res.data.data.data))
+//       );
+//       console.log(res.data.data.data);
+//       setData(`data:image/png;base64, ${dt}`);
+//       console.log(`data:image/jpeg;base64, ${dt}`);
+//       // const base64String = btoa(
+//       //   String.fromCharCode(...new Uint8Array(res.data))
+//       // );
+//     })
+
+//     .catch((err) => console.log(err, "it has an error"));
+// });
