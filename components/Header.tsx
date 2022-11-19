@@ -42,12 +42,29 @@ function Header() {
           <p>Sign-In</p>
         </div>
       )} */}
-      <Link href="/authentication">
+
+      {session ? (
+        <Link href="/authentication">
+          <div className="flex text-white items-center justify-center  border rounded-lg h-12  mt-10 cursor-pointer">
+            <ArrowRightOnRectangleIcon className="h-5 w-5" />
+            <p className="ml-2">{session.user?.name}</p>
+          </div>
+        </Link>
+      ) : (
+        <Link href="/authentication">
+          <div className="flex text-white items-center justify-center  border rounded-lg h-12  mt-10 cursor-pointer">
+            <ArrowRightOnRectangleIcon className="h-5 w-5" />
+            <p className="ml-2">Sign-In</p>
+          </div>
+        </Link>
+      )}
+
+      {/* <Link href="/authentication">
         <div className="flex text-white items-center justify-center  border rounded-lg h-12  mt-10 cursor-pointer">
           <ArrowRightOnRectangleIcon className="h-5 w-5" />
           <p className="ml-2">Sign-In</p>
         </div>
-      </Link>
+      </Link> */}
 
       <div className="flex-col mt-10 text-lg">
         <Link href="/">

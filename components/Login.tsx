@@ -1,3 +1,4 @@
+import { signIn } from "next-auth/react";
 import React, { useState } from "react";
 
 // import { UserAuth } from "../context/AuthContext";
@@ -59,7 +60,9 @@ function Login() {
         />
         <div className="form-button mt-12 flex gap-10">
           <button className="signIn-button">sign in</button>
-          <button className="google-button">sign in with google</button>
+          <button className="google-button" onClick={() => signIn()}>
+            sign in with google
+          </button>
         </div>
       </form>
     </div>
