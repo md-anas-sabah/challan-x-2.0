@@ -1,4 +1,5 @@
 import React from "react";
+import { state, useSnapshot } from "../state/index";
 import {
   HomeIcon,
   ArrowRightOnRectangleIcon,
@@ -24,6 +25,11 @@ function Header() {
         <h2 className="text-white text-2xl font-thin font-Bebas ml-5">
           Chandigarh <span className="text-red-600">University</span>
         </h2>
+        {/* <h3>
+          {useSnapshot(state).firstName !== ""
+            ? useSnapshot(state).firstName
+            : ""}
+        </h3> */}
       </div>
       {/* {session ? (
         <div
