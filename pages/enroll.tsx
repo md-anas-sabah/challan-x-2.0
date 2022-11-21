@@ -22,7 +22,7 @@ function enroll() {
     };
     axios({
       method: "post",
-      url: "https://calm-gray-penguin-hem.cyclic.app/add-user",
+      url: "https://shy-cyan-tadpole-boot.cyclic.app/add-user",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       data: data,
     })

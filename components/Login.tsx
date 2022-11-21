@@ -22,7 +22,7 @@ function Login() {
     };
     axios({
       method: "post",
-      url: "https://calm-gray-penguin-hem.cyclic.app/auth",
+      url: "https://shy-cyan-tadpole-boot.cyclic.app/auth",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       data: data,
     })
@@ -90,9 +90,6 @@ function Login() {
         />
         <div className="form-button mt-12 flex gap-10">
           <button className="signIn-button">sign in</button>
-          <button className="google-button" onClick={() => signIn()}>
-            sign in with google
-          </button>
         </div>
       </form>
     </div>

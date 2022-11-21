@@ -8,12 +8,13 @@
 
 import { proxy, useSnapshot } from "valtio";
 
-const state = proxy({
+const state= proxy({
   auth: false,
   firstName: "",
   lastName: "",
   email: "",
   empID: "",
+  data:[{}],
 });
 
 export { state, useSnapshot };

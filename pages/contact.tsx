@@ -18,7 +18,7 @@ function contact() {
     if (res) {
       axios({
         method: "post",
-        url: "https://calm-gray-penguin-hem.cyclic.app/contact",
+        url: "https://shy-cyan-tadpole-boot.cyclic.app/contact",
         headers: { "Content-Type": "application/x-www-form-urlencoded" },
         data: data,
       })

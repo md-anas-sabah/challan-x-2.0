@@ -18,8 +18,11 @@ function Form() {
       console.log(data);
       axios({
         method: "post",
-        url: "http://localhost:5000/add-challan",
-        headers: { "Content-Type": "multipart/form-data" },
+        url: "https://shy-cyan-tadpole-boot.cyclic.app/add-challan",
+        headers: {
+          "Content-Type": "multipart/form-data",
+          "Access-Control-Allow-Origin": "*",
+        },
         data: data,
       })
         .then(function (response) {

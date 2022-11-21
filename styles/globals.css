@@ -270,3 +270,10 @@ form > input {
   border: none;
   cursor: pointer;
 }
+.scrlbar {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+}
+.scrlbar::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
