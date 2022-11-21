@@ -82,8 +82,6 @@ function contact() {
           onChange={(e) => setMessage(e.target.value)}
           name=""
           id=""
-<!--           cols={num1}
-          rows={num2} -->
           className="resize-none border-none outline-none text-black p-3 scrollbar-hide"
         ></textarea>
       </div>
