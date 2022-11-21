@@ -7,6 +7,8 @@ function contact() {
   const [subject, setSub] = useState("");
   const [message, setMessage] = useState("");
   const [flag, setFlag] = useState("");
+  var num1 = 30;
+  var num2 = 10;
   const res = useSnapshot(state).auth;
   const email = useSnapshot(state).email;
   console.log(res);
@@ -80,8 +82,8 @@ function contact() {
           onChange={(e) => setMessage(e.target.value)}
           name=""
           id=""
-          cols="30"
-          rows="10"
+          cols={num1}
+          rows={num2}
           className="resize-none border-none outline-none text-black p-3 scrollbar-hide"
         ></textarea>
       </div>
