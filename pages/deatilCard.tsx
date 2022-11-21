@@ -26,7 +26,7 @@ function DeatilCard(challan: any) {
       key={challan._id}
     >
       <img
-        src={`data:image/png;base64,${base64String}`}
+        src={`data:image/png;base64`}
         width="300px"
         className="object-contain h-44"
       />
