@@ -13,7 +13,6 @@ function enroll() {
   // const [getAuth, changeAuth] = useAuth("auth");
   const submit = (e: any) => {
     e.preventDefault();
-    // changeAuth("auth", true);
     const data = {
       firstName: firstName,
       lastName: lastName,
@@ -23,7 +22,7 @@ function enroll() {
     };
     axios({
       method: "post",
-      url: "https://calm-gray-penguin-hem.cyclic.app/add-user",
+      url: "https://shy-cyan-tadpole-boot.cyclic.app/add-user",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       data: data,
     })

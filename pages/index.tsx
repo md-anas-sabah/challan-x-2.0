@@ -37,23 +37,3 @@ const Home: NextPage = () => {
 
 export default Home;
 
-// useEffect(() => {
-//   axios
-//     .get("http://localhost:5000/find", {
-//       maxContentLength: Infinity,
-//       maxBodyLength: Infinity,
-//     })
-//     .then((res) => {
-//       const dt = btoa(
-//         String.fromCharCode(...new Uint8Array(res.data.data.data))
-//       );
-//       console.log(res.data.data.data);
-//       setData(`data:image/png;base64, ${dt}`);
-//       console.log(`data:image/jpeg;base64, ${dt}`);
-//       // const base64String = btoa(
-//       //   String.fromCharCode(...new Uint8Array(res.data))
-//       // );
-//     })
-
-//     .catch((err) => console.log(err, "it has an error"));
-// });
