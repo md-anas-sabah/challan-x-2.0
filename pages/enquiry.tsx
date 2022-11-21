@@ -31,6 +31,21 @@ function enquiry() {
     <div className="overflow-y-auto w-4/5 scrlbar">
       <Challans data={data} />
     </div>
+      <div className="text-white ml-10 mt-20 font-Roboto text-xl box-border gap-7 h-44 w-5/6 flex">
+        <img
+          src="https://gumlet.assettype.com/dtnext%2Fimport%2FArticles%2F2019%2FJul%2F201907180421332135_Transport-department-seizes-38-bike-taxis-for-illegal_SECVPF.gif?w=1200&auto=format%2Ccompress&ogImage=true&enlarge=true"
+          alt=""
+          className="object-contain h-44"
+        />
+        <div>
+          <h3> Location: Near A1 Block </h3>
+          <p> Vehicle Number: HR26DQ5551</p>
+          <p>Description: N/A </p>
+          <br />
+          <button className="h-10 w-20 bg-red-600">Cancel</button>
+        </div>
+      </div>
+    </>
   );
 }
 
