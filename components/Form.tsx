@@ -89,8 +89,6 @@ function Form() {
       <textarea
         name=""
         id=""
-        cols="10"
-        rows="5"
         style={{ resize: "none" }}
         className="text-black mt-4 p-2 rounded-lg outline-none text-md"
         value={desc}
